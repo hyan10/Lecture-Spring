@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context.xsd">
+							
+	<context:annotation-config />
+	<context:component-scan base-package="DI09"/>
+	
+<!-- 	<bean id="car" class="DI09.Car"/>
+	<bean id="kia" class="DI09.KiaMaker"/>
+	<bean id="hyundai" class="DI09.HyundaiMaker"/>
+	<bean id="money" class="DI09.Money"/>
+	<bean id="orderManager" class="DI09.OrderManager"/> -->
+</beans>

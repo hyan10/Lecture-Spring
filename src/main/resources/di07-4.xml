@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context.xsd">
+							
+	<context:annotation-config />
+	
+	<!-- id는 일치, type이 불일치 bean과 
+		id 불일치, type이 매칭하는 bean  -->
+	<bean id="tire" class="DI07.ChinaTire"/>
+	<bean id="tire2" class="DI07.KoreaTire"/>
+	<!-- Resource는 에러
+		Autowired는 생성됨 -->
+	
+	<bean id="car" class="DI07.Car"/>
+</beans>

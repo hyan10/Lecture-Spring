@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="koreaTire" class="DI03.KoreaTire"/>
+	<bean id="americaTire" class="DI03.AmericaTire"/>
+	<!--
+		Car car = new Car();
+		car.setTire(tire);
+	 -->
+	<bean id="car" class="DI03.Car">
+		<!-- XML에서의 속성 주입 
+			name은 setXXX의 XXX를 의미
+			ref는 들어갈 객체	-->
+		<property name="tire" ref="americaTire"/>
+	</bean>
+</beans>

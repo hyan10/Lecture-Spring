@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context.xsd">
+							
+	<context:annotation-config />
+	
+	<!-- 두 개의 bean이 Tire 인터페이스를 상속, 그 중 하나의 bean id가 일치하는 경우 -->
+	<bean id="tire" class="DI07.KoreaTire"/>
+	<bean id="americaTire" class="DI07.AmericaTire"/>
+	
+	<bean id="car" class="DI07.Car"/>
+</beans>

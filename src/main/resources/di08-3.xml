@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="map" class="DI08.MapAddress">
+		<!-- <constructor-arg>
+		
+		</constructor-arg> -->
+		
+		<property name="address">
+			<map value-type="java.lang.String">
+				<entry>
+					<key><value>홍길동</value></key>
+					<value>경기도 성남시 분당구</value>
+				</entry>
+				<entry key="가" value="서울시 서초구 서초동"/>
+				<entry key="나" value="서울시 강남구 압구정동"/>
+				<entry key="다" value="경기도 성남시 분당구"/>
+			</map>
+		</property>
+	</bean>							
+
+</beans>
